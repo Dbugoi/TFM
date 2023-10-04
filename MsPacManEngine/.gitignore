@@ -1,0 +1,9 @@
+target/
+.vscode/
+
+*.class
+**/.DS_Store
+src/main/java/es/ucm/fdi/ici/c2122/practica1/practica1-grupo05.zip
+
+# No podemos distribuir esta librería en el caso de que fuéramos a hacer público este repositorio.
+lib/jess.jar
