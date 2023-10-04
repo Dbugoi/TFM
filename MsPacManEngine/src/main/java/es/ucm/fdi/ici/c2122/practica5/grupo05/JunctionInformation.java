@@ -1,6 +1,7 @@
-package es.ucm.fdi.ici.c2122.practica4.grupo05.mspacman;
+package es.ucm.fdi.ici.c2122.practica5.grupo05;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import pacman.game.Constants.MOVE;

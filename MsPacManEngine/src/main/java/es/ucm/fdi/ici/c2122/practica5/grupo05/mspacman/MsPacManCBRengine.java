@@ -23,7 +23,6 @@ import es.ucm.fdi.gaia.jcolibri.method.retrieve.NNretrieval.similarity.local.Equ
 import es.ucm.fdi.gaia.jcolibri.method.retrieve.NNretrieval.similarity.local.Interval;
 import es.ucm.fdi.gaia.jcolibri.method.retrieve.selection.SelectCases;
 import es.ucm.fdi.gaia.jcolibri.util.FileIO;
-import es.ucm.fdi.ici.c2122.practica4.grupo05.utils.Moves;
 import es.ucm.fdi.ici.c2122.practica5.grupo05.CBRengine.Average;
 import es.ucm.fdi.ici.c2122.practica5.grupo05.CBRengine.CachedLinearCaseBase;
 import es.ucm.fdi.ici.c2122.practica5.grupo05.CBRengine.CustomPlainTextConnector;

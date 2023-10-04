@@ -5,7 +5,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Random;
-import es.ucm.fdi.ici.c2122.practica4.grupo05.mspacman.JunctionInformation;
+
+import es.ucm.fdi.ici.c2122.practica5.grupo05.JunctionInformation;
 import pacman.game.Constants;
 import pacman.game.Game;
 import pacman.game.Constants.DM;

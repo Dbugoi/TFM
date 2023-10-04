@@ -9,9 +9,9 @@ import java.util.Set;
 
 import es.ucm.fdi.gaia.jcolibri.cbrcore.CBRQuery;
 import es.ucm.fdi.ici.c2122.practica2.grupo05.JunctionInformation;
-import es.ucm.fdi.ici.c2122.practica4.grupo05.utils.PathDistance;
 import es.ucm.fdi.ici.c2122.practica5.grupo05.ListaEnteros;
 import es.ucm.fdi.ici.c2122.practica5.grupo05.utils.Moves;
+import es.ucm.fdi.ici.c2122.practica5.grupo05.utils.PathDistance;
 import es.ucm.fdi.ici.cbr.CBRInput;
 import pacman.game.Constants.DM;
 import pacman.game.Constants.GHOST;

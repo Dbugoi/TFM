@@ -6,7 +6,8 @@ import java.util.List;
 import java.util.Optional;
 import java.util.function.Predicate;
 import java.util.function.ToIntFunction;
-import es.ucm.fdi.ici.c2122.practica4.grupo05.mspacman.NearestEdibleGhostInformation;
+
+import es.ucm.fdi.ici.c2122.practica3.grupo05.NearestEdibleGhostInformation;
 import pacman.game.Constants;
 import pacman.game.Game;
 import pacman.game.Constants.DM;

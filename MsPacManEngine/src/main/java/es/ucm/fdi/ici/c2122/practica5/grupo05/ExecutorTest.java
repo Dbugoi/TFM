@@ -1,7 +1,6 @@
 package es.ucm.fdi.ici.c2122.practica5.grupo05;
 
 
-import es.ucm.fdi.ici.c2122.practica4.grupo05.GhostsRandom;
 import es.ucm.fdi.ici.c2122.practica5.grupo05.MsPacMan;
 import pacman.Executor;
 import pacman.controllers.GhostController;
@@ -21,7 +20,7 @@ public class ExecutorTest {
                 .build();
 
         PacmanController pacMan = new MsPacMan();
-        GhostController ghosts = new GhostsRandom(); //luego cambiarlo
+        GhostController ghosts = new Ghosts(); //luego cambiarlo
       
         
 
