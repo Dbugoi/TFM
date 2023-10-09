@@ -1,0 +1,40 @@
+<TextFileConfiguration>
+	<FilePath>not used</FilePath>
+	<Delimiters>,</Delimiters>
+	<DescriptionClassName>es.ucm.fdi.ici.c2122.practica5.grupo09.CBREX.ghosts.GhostsDescriptionEX</DescriptionClassName>
+	<DescriptionMappings>
+		<Map>id</Map>
+
+		<Map>level</Map>
+		<Map>score</Map>
+		<Map>time</Map>
+		<Map>lives</Map>
+		
+		<Map>msPacmanPos</Map>
+		<Map>msPacmanMove</Map>	
+
+		<Map>ghostDistance</Map>
+
+		<Map>wasEaten</Map>
+		<Map>isEdible</Map>
+
+		<Map>ghostType</Map>
+
+	</DescriptionMappings>
+	<SolutionClassName>es.ucm.fdi.ici.c2122.practica5.grupo09.CBREX.ghosts.GhostsSolutionEX</SolutionClassName>
+	<SolutionMappings>
+		<Map>id</Map>
+		<Map>action</Map>
+	</SolutionMappings>
+	<ResultClassName>es.ucm.fdi.ici.c2122.practica5.grupo09.CBREX.ghosts.GhostsResultEX</ResultClassName>
+	<ResultMappings>
+		<Map>id</Map>
+		<Map>score</Map>
+		<Map>life</Map>
+
+		<Map>ghostDist</Map>
+
+		<Map>wasEaten</Map>
+		<Map>isEdible</Map>
+	</ResultMappings>
+</TextFileConfiguration>

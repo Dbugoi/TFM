@@ -1,0 +1,39 @@
+<TextFileConfiguration>
+	<FilePath>not used</FilePath>
+	<Delimiters>,dS->:[] </Delimiters>
+	<DescriptionClassName>es.ucm.fdi.ici.c2122.practica5.grupo02.ghosts.GhostsDescription</DescriptionClassName>
+	<DescriptionMappings>
+		<Map>id</Map>
+		<Map>time</Map>
+		<Map>score</Map>
+		<Map>lives</Map>
+		<Map>mspacmanPos</Map>
+		<Map>mspacmanLastMove</Map>
+		<Map>nearestGhostsDistance0</Map>
+		<Map>nearestGhostsDistance1</Map>
+		<Map>nearestGhostsDistance2</Map>
+		<Map>nearestGhostsDistance3</Map>
+		<Map>nearestGhostsEdible0</Map>
+		<Map>nearestGhostsEdible1</Map>
+		<Map>nearestGhostsEdible2</Map>
+		<Map>nearestGhostsEdible3</Map>
+		<Map>nearestGhostsLastMoves0</Map>
+		<Map>nearestGhostsLastMoves1</Map>
+		<Map>nearestGhostsLastMoves2</Map>
+		<Map>nearestGhostsLastMoves3</Map>
+	</DescriptionMappings>
+	<SolutionClassName>es.ucm.fdi.ici.c2122.practica5.grupo02.ghosts.GhostsSolution</SolutionClassName>
+	<SolutionMappings>
+		<Map>id</Map>
+		<Map>action</Map>
+	</SolutionMappings>
+	<ResultClassName>es.ucm.fdi.ici.c2122.practica5.grupo02.ghosts.GhostsResult</ResultClassName>
+	<ResultMappings>
+		<Map>id</Map>
+		<Map>scoreWeight</Map>
+		<Map>livesLost</Map>
+		<Map>isGhostEdible</Map>
+		<Map>hasGhostBeenEaten</Map>
+		<Map>ghostDst</Map>
+	</ResultMappings>
+</TextFileConfiguration>

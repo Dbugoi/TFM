@@ -1,0 +1,39 @@
+<TextFileConfiguration>
+	<FilePath>not used</FilePath>
+	<Delimiters>,</Delimiters>
+	<DescriptionClassName>es.ucm.fdi.ici.c2122.practica5.grupo10.ghosts.GhostsDescription</DescriptionClassName>
+	<DescriptionMappings>
+		<Map>ghost</Map>
+		<Map>distance_to_mspacman_up</Map><Map>distance_to_mspacman_down</Map><Map>distance_to_mspacman_left</Map><Map>distance_to_mspacman_right</Map><Map>distance_to_ghosts_up</Map><Map>distance_to_ghosts_down</Map><Map>distance_to_ghosts_left</Map><Map>distance_to_ghosts_right</Map><Map>edible_time_ghost</Map><Map>edible_time_ghost_2</Map><Map>edible_time_ghost_3</Map><Map>edible_time_ghost_4</Map><Map>distance_nearest_ppill_mspacman</Map>
+		<Map>distance_ghost_to_nearest_ppill</Map>
+		<Map>Score</Map>
+		<Map>lastMovePacman</Map>
+		<Map>lastMoveGhost</Map>
+		<Map>MsPacmanDeaths</Map>
+		<Map>MsPacManEatMe</Map>
+		<Map>eatedMsPacman</Map>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</DescriptionMappings>
+	<SolutionClassName>es.ucm.fdi.ici.c2122.practica5.grupo10.ghosts.GhostsSolution</SolutionClassName>
+	<SolutionMappings>
+		<Map>id</Map>
+		<Map>action</Map>
+	</SolutionMappings>
+	<ResultClassName>es.ucm.fdi.ici.c2122.practica5.grupo10.ghosts.GhostsResult</ResultClassName>
+	<ResultMappings>
+		<Map>id</Map>
+		<Map>score</Map>
+	</ResultMappings>
+</TextFileConfiguration>

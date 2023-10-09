@@ -1,0 +1,28 @@
+<TextFileConfiguration>
+	<FilePath>not used</FilePath>
+	<Delimiters>,</Delimiters>
+	<DescriptionClassName>es.ucm.fdi.ici.c2122.practica5.grupo08.ghosts.GhostsDescription</DescriptionClassName>
+	<DescriptionMappings>
+		<Map>id</Map>
+		<Map>HPs</Map>		
+		<Map>score</Map>
+		<Map>level</Map>
+		<Map>positions</Map>	
+		<Map>distanceToMsPacman</Map>		
+		<Map>edible</Map>	
+		<Map>actives</Map>	
+		<Map>distanceMsPacmanPpill</Map>
+	</DescriptionMappings>
+	<SolutionClassName>es.ucm.fdi.ici.c2122.practica5.grupo08.ghosts.GhostsSolution</SolutionClassName>
+	<SolutionMappings>
+		<Map>id</Map>
+		<Map>actions</Map>
+	</SolutionMappings>
+	<ResultClassName>es.ucm.fdi.ici.c2122.practica5.grupo08.ghosts.GhostsResult</ResultClassName>
+	<ResultMappings>
+		<Map>id</Map>
+		<Map>score</Map>
+		<Map>hasDied</Map>
+		<Map>result</Map>
+	</ResultMappings>
+</TextFileConfiguration>

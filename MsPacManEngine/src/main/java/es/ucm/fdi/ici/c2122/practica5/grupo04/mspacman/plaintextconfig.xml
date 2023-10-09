@@ -1,0 +1,47 @@
+<TextFileConfiguration>
+	<FilePath>not used</FilePath>
+	<Delimiters>,</Delimiters>
+	<DescriptionClassName>es.ucm.fdi.ici.c2122.practica5.grupo04.mspacman.MsPacManDescription</DescriptionClassName>
+	<DescriptionMappings>
+		<Map>id</Map>		
+		<Map>posPacman</Map>		
+		<Map>BLINKYghostPos</Map>		
+		<Map>PINKYghostPos</Map>		
+		<Map>INKYghostPos</Map>	
+		<Map>SUEghostPos</Map>		
+		<Map>BLINKYghostMove</Map>		
+		<Map>PINKYghostMove</Map>	
+		<Map>INKYghostMove</Map>		
+		<Map>SUEghostMove</Map>		
+		<Map>lastPacmanDirection</Map>	
+		<Map>BLINKYghostEdible</Map>		
+		<Map>PINKYghostEdible</Map>		
+		<Map>INKYghostEdible</Map>	
+		<Map>SUEghostEdible</Map>		
+		<Map>ppillsPos1</Map>		
+		<Map>ppillsPos2</Map>	
+		<Map>ppillsPos3</Map>		
+		<Map>ppillsPos4</Map>		
+		<Map>closestPill</Map>	
+		<Map>closestPillDist</Map>	
+		<Map>nextJunctionPills1</Map>	
+		<Map>nextJunctionPills2</Map>	
+		<Map>nextJunctionPills3</Map>	
+		<Map>nextJunctionPills4</Map>	
+		<Map>closestPPillDist</Map>	
+		<Map>danger</Map>	
+		<Map>health</Map>	
+		<Map>score</Map>
+		<Map>time</Map>	
+	</DescriptionMappings>
+	<SolutionClassName>es.ucm.fdi.ici.c2122.practica5.grupo04.mspacman.MsPacManSolution</SolutionClassName>
+	<SolutionMappings>
+		<Map>id</Map>
+		<Map>action</Map>
+	</SolutionMappings>
+	<ResultClassName>es.ucm.fdi.ici.c2122.practica5.grupo04.mspacman.MsPacManResult</ResultClassName>
+	<ResultMappings>
+		<Map>id</Map>
+		<Map>score</Map>
+	</ResultMappings>
+</TextFileConfiguration>

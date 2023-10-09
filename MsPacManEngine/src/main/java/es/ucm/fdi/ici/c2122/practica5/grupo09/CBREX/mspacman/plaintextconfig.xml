@@ -1,0 +1,62 @@
+<TextFileConfiguration>
+	<FilePath>not used</FilePath>
+	<Delimiters>,</Delimiters>
+	<DescriptionClassName>es.ucm.fdi.ici.c2122.practica5.grupo09.CBREX.mspacman.MsPacManDescriptionEX</DescriptionClassName>
+	<DescriptionMappings>
+		<Map>id</Map>
+
+		<Map>level</Map>
+		<Map>score</Map>
+		<Map>time</Map>
+		<Map>lives</Map>
+
+		<Map>msPacmanPos</Map>
+		<Map>msPacmanMove</Map>	
+
+		<Map>nearestGhost1</Map>
+		<Map>nearestGhost2</Map>
+		<Map>nearestGhost3</Map>
+		<Map>nearestGhost4</Map>
+
+		<Map>nearestEdible1</Map>
+		<Map>nearestEdible2</Map>
+		<Map>nearestEdible3</Map>
+		<Map>nearestEdible4</Map>
+
+		<!-- <Map>INKYlair</Map>
+		<Map>PINKYlair</Map>
+		<Map>BLINKYlair</Map>
+		<Map>SUElair</Map> -->
+
+		<Map>INKYdir</Map>
+		<Map>PINKYdir</Map>
+		<Map>BLINKYdir</Map>
+		<Map>SUEdir</Map>
+
+		<Map>nearestPPill</Map>
+		<Map>remainingPills</Map>
+	</DescriptionMappings>
+	<SolutionClassName>es.ucm.fdi.ici.c2122.practica5.grupo09.CBREX.mspacman.MsPacManSolutionEX</SolutionClassName>
+	<SolutionMappings>
+		<Map>id</Map>
+		<Map>action</Map>
+	</SolutionMappings>
+	<ResultClassName>es.ucm.fdi.ici.c2122.practica5.grupo09.CBREX.mspacman.MsPacManResultEX</ResultClassName>
+	<ResultMappings>
+		<Map>id</Map>
+		<Map>score</Map>
+		<Map>life</Map>
+
+		<Map>nearestPPillDist</Map>
+
+		<Map>nearestGhost1</Map>
+		<Map>nearestGhost2</Map>
+		<Map>nearestGhost3</Map>
+		<Map>nearestGhost4</Map>
+
+		<Map>nearestEdible1</Map>
+		<Map>nearestEdible2</Map>
+		<Map>nearestEdible3</Map>
+		<Map>nearestEdible4</Map>
+	</ResultMappings>
+</TextFileConfiguration>
