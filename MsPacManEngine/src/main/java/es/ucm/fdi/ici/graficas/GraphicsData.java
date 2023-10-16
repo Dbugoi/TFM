@@ -15,11 +15,13 @@ public class GraphicsData {
 	private int intentos;
 	private Vector<EpisodeData> v;
 	List<List<String>>  dataLines;
+	List<String>dataTimes;
 	
 	
 	public GraphicsData(int intentos) {
 		this.v=new Vector<EpisodeData>();
 		this.dataLines = new ArrayList<>();
+		this.dataTimes = new ArrayList<>();
 	}
 
 	public void addEpisode(EpisodeData d) {
@@ -30,16 +32,32 @@ public class GraphicsData {
 	public void compute() {
 		//pasar a un archivo csv todos los datos
 		for(EpisodeData e:v) {
+			//Resultados luchas
 			dataLines.addAll(e.getData());
+			//Tiempos en cada episodio
+			dataTimes.add(e.getAvgTime());
+			
 		}
 		getCSV();
+		getTimeCSV();
 	}
 	/*public String convertToCSV(String[] data) {
 	    return Stream.of(data)
 	      .map(this::escapeSpecialCharacters)
 	      .collect(Collectors.joining(","));
 	}*/
-	
+	public void getTimeCSV()  {
+		File csvOutputFile = new File("tiempos.csv");
+
+        try (PrintWriter pw = new PrintWriter(new FileWriter(csvOutputFile))) {
+            dataTimes.forEach(line -> {
+                pw.println(line);
+            });
+        } catch (IOException e) {
+            e.printStackTrace();
+        
+	    }
+	}
 	public void getCSV()  {
 		File csvOutputFile = new File("resultados.csv");
 

@@ -9,33 +9,40 @@ import pacman.game.util.Stats;
 
 public class EpisodeData {
 	
-	private int totalTime;
+	private long totalTime;
 	private int episode;
 	private int cicles;
-	private int avgTime;
+	private double avgTime;
 	
 	
 	Stats[][]stats;
 	
-	public EpisodeData(int episode) {
+	public EpisodeData(int episode,int cicles) {
 		this.episode=episode;
+		this.cicles=cicles;
 	}
 
 	public void addScores(Stats[][] stats) {
 		this.stats=stats;
 	}
 
-	
+	public void addTime(long t) {
+		this.totalTime=t;
+	}
 	
 	public void computeData() {
-		calculateTimePerCicle();
+		//calculateTimePerCicle();
+		this.avgTime=this.totalTime/this.cicles;
 		
 	}
 	
 	
-
-	private void calculateTimePerCicle() {
+		//Borrar
+	/*private void calculateTimePerCicle() {
 		this.avgTime=this.totalTime/this.cicles;
+	}*/
+	public String getAvgTime() {
+		return episode +","+ this.avgTime;
 	}
 	public List<List<String>> getData() {
 		List<List<String>> dataLines = new ArrayList<>();
@@ -57,25 +64,5 @@ public class EpisodeData {
 		return dataLines;
 		
 	}
-	/*
-	public String getData() {
-		String res="";
-		int i=0;
-		for(Stats[] result_pacman : stats)
-        {
-			String aux=";";
-        	for(Stats s: result_pacman)
-        	{
-        		aux+=Double.toString(s.getAverage())+";";
-        		//System.out.print(s.getAverage()+";");
-        	}
-        	
-        	
-        	i++;
-        }      
-		
-		return res;
-		
-	}*/
 	
 }

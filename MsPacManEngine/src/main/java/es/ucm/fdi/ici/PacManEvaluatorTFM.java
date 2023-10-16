@@ -164,20 +164,28 @@ public class PacManEvaluatorTFM {
 	
 	
 	public static void main(String[] args) {
-		int totalEpisodes;
-		totalEpisodes=1000;
-		
+		int totalEpisodes=1000;
+		int cicles = 50;
 		GraphicsData gd= new GraphicsData(totalEpisodes);
 		
-		for(int i=0;i<totalEpisodes;i+=50) {
+		for(int i=cicles;i<=totalEpisodes;i+=cicles) {
+			System.out.println("Episodio "+i);
+			// Medir el tiempo antes de ejecutar la operación
+	        long startTime = System.currentTimeMillis();
 			PacManEvaluatorTFM evaluator = new PacManEvaluatorTFM();
 			Scores scores = evaluator.evaluate();
+			// Medir el tiempo después de ejecutar la operación
+	        long endTime = System.currentTimeMillis();
+	        // Calcular el tiempo transcurrido en milisegundos
+	        long elapsedTime = endTime - startTime;
 			scores.printScoreAndRanking();
 			
 			//save info of episode
-			EpisodeData d= new EpisodeData(i);
+			EpisodeData d= new EpisodeData(i,cicles);
 			d.addScores(scores.getStats());
-			//d.computeData();
+			d.addTime(elapsedTime);
+			d.computeData();
+			
 			gd.addEpisode(d);
 		}
 		gd.compute();
