@@ -26,6 +26,7 @@ import es.ucm.fdi.gaia.jcolibri.util.FileIO;
 import es.ucm.fdi.ici.c2122.practica5.grupo05.CBRengine.Average;
 import es.ucm.fdi.ici.c2122.practica5.grupo05.CBRengine.CachedLinearCaseBase;
 import es.ucm.fdi.ici.c2122.practica5.grupo05.CBRengine.CustomPlainTextConnector;
+import es.ucm.fdi.ici.graficas.EpisodeData;
 import pacman.game.Constants.MOVE;
 import pacman.game.Game;
 
@@ -276,6 +277,7 @@ public class MsPacManCBRengine implements StandardCBRApplication {
 			//Compute reusess
 			this.action = reuse(eval);
 			
+			
 		
 		}
 		//Compute revise & retain
@@ -330,6 +332,14 @@ public class MsPacManCBRengine implements StandardCBRApplication {
 			if(similarity>0.8 && result.getScore()>0)
 			{
 				listSim.add(r.get_case());
+				//Meter avg
+				Map<String, Double> map = EpisodeData.getAvgMap();
+				if(!map.containsKey(TEAM)) {
+					map.put(TEAM, 0.5);
+				}
+				double d=(map.get(TEAM)*0.95)+(similarity *0.05);
+				map.put(TEAM, d);
+				
 			}
 			else if(result.getScore()<0)
 				listBadExample.add(r.get_case());

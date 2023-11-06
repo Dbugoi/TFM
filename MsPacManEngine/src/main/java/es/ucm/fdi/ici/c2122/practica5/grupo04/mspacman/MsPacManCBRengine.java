@@ -4,6 +4,7 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
+import java.util.Map;
 
 import es.ucm.fdi.gaia.jcolibri.cbraplications.StandardCBRApplication;
 import es.ucm.fdi.gaia.jcolibri.cbrcore.Attribute;
@@ -23,6 +24,7 @@ import es.ucm.fdi.ici.c2122.practica5.grupo04.CBRengine.Average;
 import es.ucm.fdi.ici.c2122.practica5.grupo04.CBRengine.CachedLinearCaseBase;
 import es.ucm.fdi.ici.c2122.practica5.grupo04.CBRengine.CustomPlainTextConnector;
 import es.ucm.fdi.ici.c2122.practica5.grupo04.CBRengine.DistanceComparator;
+import es.ucm.fdi.ici.graficas.EpisodeData;
 import pacman.game.Constants.MOVE;
 import pacman.game.Game;
 
@@ -198,6 +200,15 @@ public class MsPacManCBRengine implements StandardCBRApplication {
 			
 			similarCases[i] = rResults[i].get_case();
 			similarities[i] = rResults[i].getEval();
+				
+			//Meter avg
+			Map<String, Double> map = EpisodeData.getAvgMap();
+			if(!map.containsKey(TEAM)) {
+				map.put(TEAM, 0.5);
+			}
+			double d=(map.get(TEAM)*0.95)+(similarities[i] *0.05);
+			map.put(TEAM, d);
+			//
 			msPacManResult[i] = (MsPacManResult) similarCases[i].getResult();
 			msPacManSolutions[i] = (MsPacManSolution) similarCases[i].getSolution();
 		}

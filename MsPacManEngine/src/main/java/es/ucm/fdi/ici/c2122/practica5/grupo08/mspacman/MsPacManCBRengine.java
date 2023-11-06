@@ -3,6 +3,7 @@ package es.ucm.fdi.ici.c2122.practica5.grupo08.mspacman;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Map;
 import java.util.Random;
 
 import es.ucm.fdi.gaia.jcolibri.cbraplications.StandardCBRApplication;
@@ -24,6 +25,7 @@ import es.ucm.fdi.ici.c2122.practica5.grupo08.CustomPlainTextConnector;
 import es.ucm.fdi.ici.c2122.practica5.grupo08.EqualPosition;
 import es.ucm.fdi.ici.c2122.practica5.grupo08.VectorDistanceSimilarity;
 import es.ucm.fdi.ici.c2122.practica5.grupo08.mspacman.MsPacmanCaseFilter.Filter;
+import es.ucm.fdi.ici.graficas.EpisodeData;
 import pacman.game.Constants.MOVE;
 
 public class MsPacManCBRengine implements StandardCBRApplication {
@@ -147,6 +149,15 @@ public class MsPacManCBRengine implements StandardCBRApplication {
 			double similarity = r.getEval();
 			MsPacManResult result = (MsPacManResult) cbrCase.getResult();
 			MsPacManSolution solution = (MsPacManSolution) cbrCase.getSolution();
+			
+			//Meter avg
+			Map<String, Double> map = EpisodeData.getAvgMap();
+			if(!map.containsKey(TEAM)) {
+				map.put(TEAM, 0.5);
+			}
+			double d=(map.get(TEAM)*0.95)+(similarity *0.05);
+			map.put(TEAM, d);
+			
 			
 			real[solution.action.ordinal()] = true;
 			moves[solution.action.ordinal()] += similarity * result.result;

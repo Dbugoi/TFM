@@ -1,10 +1,9 @@
 package es.ucm.fdi.ici.graficas;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
-import java.util.Vector;
-
-import es.ucm.fdi.ici.Scores.ScorePair;
+import java.util.Map;
 import pacman.game.util.Stats;
 
 public class EpisodeData {
@@ -13,13 +12,15 @@ public class EpisodeData {
 	private int episode;
 	private int cicles;
 	private double avgTime;
-	
+	private static Map<String, Double> avgMap = new HashMap<>();
+	private List<String> avgList;
 	
 	Stats[][]stats;
 	
 	public EpisodeData(int episode,int cicles) {
 		this.episode=episode;
 		this.cicles=cicles;
+		this.avgList=new ArrayList<>();
 	}
 
 	public void addScores(Stats[][] stats) {
@@ -33,10 +34,21 @@ public class EpisodeData {
 	public void computeData() {
 		//calculateTimePerCicle();
 		this.avgTime=this.totalTime/this.cicles;
+		resetAvg();
 		
 	}
-	
-	
+	public static Map<String, Double> getAvgMap() {
+        return avgMap;
+    }
+	private void resetAvg() {
+        for (Map.Entry<String, Double> m : avgMap.entrySet()) {
+        	avgList.add(episode+","+m.getKey()+","+ Double.toString(m.getValue()));
+        }
+        avgMap.clear();
+	}
+	public List<String> getAvgList(){
+		return this.avgList;
+	}
 		//Borrar
 	/*private void calculateTimePerCicle() {
 		this.avgTime=this.totalTime/this.cicles;
