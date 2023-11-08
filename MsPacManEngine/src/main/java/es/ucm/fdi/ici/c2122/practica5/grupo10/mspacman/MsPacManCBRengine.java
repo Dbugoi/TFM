@@ -142,6 +142,10 @@ public class MsPacManCBRengine implements StandardCBRApplication {
 		if(!caseBase.isFull())
 			this.storageManager.reviseAndRetain(newCase, sim);
 		
+		//Put caseBase Size
+		Map<String, Integer> sizeMap = EpisodeData.getCaseBaseSizeMap();
+		sizeMap.put(TEAM, caseBase.getCases().size());
+		
 	}
 
 	private MOVE reuse(Collection<RetrievalResult> eval, CBRQuery query)

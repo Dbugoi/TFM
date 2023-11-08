@@ -14,6 +14,9 @@ public class EpisodeData {
 	private double avgTime;
 	private static Map<String, Double> avgMap = new HashMap<>();
 	private List<String> avgList;
+	//Size of caseBase
+	private static Map<String, Integer> caseBaseSizeMap = new HashMap<>();
+	private List<String> caseBaseSizeList;
 	
 	Stats[][]stats;
 	
@@ -21,6 +24,7 @@ public class EpisodeData {
 		this.episode=episode;
 		this.cicles=cicles;
 		this.avgList=new ArrayList<>();
+		this.caseBaseSizeList=new ArrayList<>();
 	}
 
 	public void addScores(Stats[][] stats) {
@@ -34,9 +38,15 @@ public class EpisodeData {
 	public void computeData() {
 		//calculateTimePerCicle();
 		this.avgTime=this.totalTime/this.cicles;
+		
 		resetAvg();
 		
+		//Reset Size of caseBase
+		computeCaseBase();
+		
 	}
+	
+	//Avg knn 
 	public static Map<String, Double> getAvgMap() {
         return avgMap;
     }
@@ -49,10 +59,21 @@ public class EpisodeData {
 	public List<String> getAvgList(){
 		return this.avgList;
 	}
-		//Borrar
-	/*private void calculateTimePerCicle() {
-		this.avgTime=this.totalTime/this.cicles;
-	}*/
+	
+	//Size of caseBase
+	public static Map<String, Integer> getCaseBaseSizeMap() {
+        return caseBaseSizeMap;
+    }
+	private void computeCaseBase() {
+        for (Map.Entry<String, Integer> m : caseBaseSizeMap.entrySet()) {
+        	caseBaseSizeList.add(episode+","+m.getKey()+","+ Integer.toString(m.getValue()));
+        }
+	}
+	public List<String> getCaseBaseSizeList(){
+		return this.caseBaseSizeList;
+	}
+	
+	//Average time per episode
 	public String getAvgTime() {
 		return episode +","+ this.avgTime;
 	}

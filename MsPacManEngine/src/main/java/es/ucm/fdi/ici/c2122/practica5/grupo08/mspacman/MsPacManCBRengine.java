@@ -128,7 +128,9 @@ public class MsPacManCBRengine implements StandardCBRApplication {
 			//Compute reuse
 			this.action = reuse(eval, query);
 		}
-		
+		//Put caseBase Size
+		Map<String, Integer> sizeMap = EpisodeData.getCaseBaseSizeMap();
+		sizeMap.put(TEAM, caseBase.getCases().size());
 		//Compute revise & retain
 		CBRCase newCase = createNewCase(query);
 		this.storageManager.reviseAndRetain(newCase);

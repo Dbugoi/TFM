@@ -17,6 +17,7 @@ public class GraphicsData {
 	private List<List<String>>  dataLines;
 	private List<String>dataTimes;
 	private List<String> dataAvg;
+	private List<String> dataCaseBaseSize;
 	
 	
 	public GraphicsData(int intentos) {
@@ -25,6 +26,8 @@ public class GraphicsData {
 		this.dataLines = new ArrayList<>();
 		this.dataTimes = new ArrayList<>();
 		this.dataAvg = new ArrayList<>();
+		this.dataCaseBaseSize = new ArrayList<>();
+
 	}
 
 	public void addEpisode(EpisodeData d) {
@@ -41,17 +44,33 @@ public class GraphicsData {
 			dataTimes.add(e.getAvgTime());
 			//Medias knn 
 			dataAvg.addAll(e.getAvgList());
+			//Size of caseBase
+			dataCaseBaseSize.addAll(e.getCaseBaseSizeList());
 			
 		}
 		getCSV();
 		getTimeCSV();
 		getAvgCSV();
+		getCaseBaseSizeCSV();
 	}
 	/*public String convertToCSV(String[] data) {
 	    return Stream.of(data)
 	      .map(this::escapeSpecialCharacters)
 	      .collect(Collectors.joining(","));
 	}*/
+	public void getCaseBaseSizeCSV()  {
+		File csvOutputFile = new File("casebasesize.csv");
+
+        try (PrintWriter pw = new PrintWriter(new FileWriter(csvOutputFile))) {
+        	dataCaseBaseSize.forEach(line -> {
+                pw.println(line);
+            });
+        } catch (IOException e) {
+            e.printStackTrace();
+        
+	    }
+	}
+	
 	public void getAvgCSV()  {
 		File csvOutputFile = new File("avgknn.csv");
 
