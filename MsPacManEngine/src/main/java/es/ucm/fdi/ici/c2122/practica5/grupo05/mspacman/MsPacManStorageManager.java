@@ -116,6 +116,8 @@ public class MsPacManStorageManager {
 		//Store the old case right now into the case base
 		//Alternatively we could store all them when game finishes in close() method
 		
+		//aplicar politica guardando solo casos buenos
+		
 		//here you should also check if the case must be stored into persistence (too similar to existing ones, etc.)
 		StoreCasesMethod.storeCase(this.caseBase, bCase);
 		
