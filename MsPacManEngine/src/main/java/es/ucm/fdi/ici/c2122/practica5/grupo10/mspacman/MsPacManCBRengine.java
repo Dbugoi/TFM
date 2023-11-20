@@ -144,7 +144,7 @@ public class MsPacManCBRengine implements StandardCBRApplication {
 		
 		//Put caseBase Size
 		Map<String, Integer> sizeMap = EpisodeData.getCaseBaseSizeMap();
-		sizeMap.put(TEAM, caseBase.getCases().size());
+		sizeMap.put(TEAM, caseBase.getCasesSize());
 		
 	}
 

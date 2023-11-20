@@ -57,7 +57,7 @@ public class CachedLinearCaseBase implements CBRCaseBase {
 		//not used
 		return new ArrayList<CBRCase>();
 	}
-
+	
 	/**
 	 * TODO.
 	 */
@@ -121,6 +121,15 @@ public class CachedLinearCaseBase implements CBRCaseBase {
 	
 	public boolean isFull() {
 		return nCases >= CASES_LIMIT;
+	}
+
+	public Integer getCasesSize() {
+		int casesSize=0;
+		for (Collection<CBRCase> colection : workingCases.values()) {
+			casesSize += colection.size();
+        }
+			
+		return casesSize;
 	}
 
 }
