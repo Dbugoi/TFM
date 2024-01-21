@@ -1,0 +1,27 @@
+Trials: 2
+Scores Table
+es.ucm.fdi.ici.c2021.practica2.grupo04.MsPacMan - ghosts.GhostRandom: 5850.0;
+es.ucm.fdi.ici.c2021.practica2.grupo04.MsPacMan - ghosts.GhostAggressive: 15875.0;
+es.ucm.fdi.ici.c2021.practica2.grupo04.MsPacMan - ghosts.GhostAlgorithmic: 3115.0;
+MsPacManQLearn1000 - ghosts.GhostRandom: 1390.0;
+MsPacManQLearn1000 - ghosts.GhostAggressive: 2080.0;
+MsPacManQLearn1000 - ghosts.GhostAlgorithmic: 1160.0;
+MsPacManQLearn10000 - ghosts.GhostRandom: 1620.0;
+MsPacManQLearn10000 - ghosts.GhostAggressive: 1205.0;
+MsPacManQLearn10000 - ghosts.GhostAlgorithmic: 845.0;
+MsPacManQLearn100000 - ghosts.GhostRandom: 1300.0;
+MsPacManQLearn100000 - ghosts.GhostAggressive: 3160.0;
+MsPacManQLearn100000 - ghosts.GhostAlgorithmic: 1055.0;
+MsPacManQLearn1000000 - ghosts.GhostRandom: 935.0;
+MsPacManQLearn1000000 - ghosts.GhostAggressive: 795.0;
+MsPacManQLearn1000000 - ghosts.GhostAlgorithmic: 1925.0;
+MsPacManQLearn10000000 - ghosts.GhostRandom: 1615.0;
+MsPacManQLearn10000000 - ghosts.GhostAggressive: 1160.0;
+MsPacManQLearn10000000 - ghosts.GhostAlgorithmic: 1735.0;
+MsPacMan Ranking
+es.ucm.fdi.ici.c2021.practica2.grupo04.MsPacMan: 8280,00
+MsPacManQLearn100000: 1838,33
+MsPacManQLearn1000: 1543,33
+MsPacManQLearn10000000: 1503,33
+MsPacManQLearn10000: 1223,33
+MsPacManQLearn1000000: 1218,33
