@@ -50,6 +50,7 @@ Cuando queremos evaluar los MsPacMan con Q-learning debemos usar el evaluador co
 
 ### Ejecución con script de bash
 Para ejecutar el evaluador con bash tenemos que tener un script de bash. A continuación se muestra unos ejemplo de script de bash para cada evaluador.
+
 #### Para PacManEvaluatorTFMBash:
 ```#!/bin/bash
 
@@ -66,7 +67,7 @@ CICLOS=50
 for ((i = $CICLOS; i <= $TOTAL_EJECUCIONES; i+=$CICLOS)); do
   java -jar "$JAR_FILE" "$i"
 done
-´´´
+```
 
 #### Para PacManEvaluatorTFMBash:
 ```#!/bin/bash
@@ -84,6 +85,6 @@ CICLOS=1
 for ((i = $CICLOS; i <= $TOTAL_EJECUCIONES; i+=$CICLOS)); do
   java -jar "$JAR_FILE" "$i"
 done
-´´´
+```
 
 
