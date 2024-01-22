@@ -1,4 +1,5 @@
-# TFM - Compartive analysis of the learning capacity of the CBR paradigm
+# TFM - Análisis comparativo de la capacidad de aprendizaje del paradigma CBR respecto a otros modelos de aprendizaje máquina.
+
 Clases para la evaluación de los diferentes modelos de MsPacMan y ghosts en el juego MsPacMan vs Ghosts.
 Implementacion de clases evaluadoras que obtienen información de las evaluaciones realizadas. Posteriormente con esta información se pueden producir gráficas que ayuden a analizar los resultados obtenidos.
 
