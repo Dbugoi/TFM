@@ -24,7 +24,7 @@ La ruta es la siguiente: src/main/java/es/ucm/fdi/ici
 
 
 ### config.properties
- Para evaluar una implementación se debe poner el nombre de la implementación en el archivo *config.properties*.
+ Para evaluar una implementación se debe poner la localización de la implementación en el archivo *config.properties*.
  #### Ejemplo
  ```trials = 50
 file = results.txt
@@ -46,3 +46,44 @@ es.ucm.fdi.ici.c2122.practica3.grupo09.Ghosts,\
 es.ucm.fdi.ici.c2122.practica3.grupo10.Ghosts
 ```
 Cuando queremos evaluar los MsPacMan con Q-learning debemos usar el evaluador correspondiente y no poner nada en el apartado MsPacMans. En el apartado GhostsTeams debemos poner los ghosts que queremos que se enfrenten a los MsPacMan con Q-learning.
+
+
+### Ejecución con script de bash
+Para ejecutar el evaluador con bash tenemos que tener un script de bash. A continuación se muestra unos ejemplo de script de bash para cada evaluador.
+#### Para PacManEvaluatorTFMBash:
+```#!/bin/bash
+
+# Ruta al archivo JAR que deseas ejecutar
+JAR_FILE="evaluatorTFMBash.jar"
+
+# Número total de ejecuciones
+TOTAL_EJECUCIONES=1000
+
+#Ciclos por ejecucion
+CICLOS=50
+
+# Loop para ejecutar el JAR 1000 veces pasando el valor de 'i' como argumento de 50 en 50
+for ((i = $CICLOS; i <= $TOTAL_EJECUCIONES; i+=$CICLOS)); do
+  java -jar "$JAR_FILE" "$i"
+done
+´´´
+
+#### Para PacManEvaluatorTFMBash:
+```#!/bin/bash
+
+# Ruta al archivo JAR que deseas ejecutar
+JAR_FILE="evaluatorQLearnTFMBash.jar"
+
+# Número total de ejecuciones
+TOTAL_EJECUCIONES=10
+
+#Ciclos por ejecucion
+CICLOS=1
+
+# Loop para ejecutar el JAR 1000 veces pasando el valor de 'i' como argumento de 50 en 50
+for ((i = $CICLOS; i <= $TOTAL_EJECUCIONES; i+=$CICLOS)); do
+  java -jar "$JAR_FILE" "$i"
+done
+´´´
+
+
