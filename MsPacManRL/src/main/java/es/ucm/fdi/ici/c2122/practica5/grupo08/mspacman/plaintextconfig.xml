@@ -1,0 +1,28 @@
+<TextFileConfiguration>
+	<FilePath>not used</FilePath>
+	<Delimiters>,</Delimiters>
+	<DescriptionClassName>es.ucm.fdi.ici.c2122.practica5.grupo08.mspacman.MsPacManDescription</DescriptionClassName>
+	<DescriptionMappings>
+		<Map>id</Map>
+		<Map>score</Map>
+		<Map>level</Map>
+		<Map>HPs</Map>		
+		<Map>pos</Map>	
+		<Map>ghostDistances</Map>		
+		<Map>powerPillDistances</Map>	
+		<Map>pillDistances</Map>		
+		<Map>edibleGhostsDistances</Map>		
+	</DescriptionMappings>
+	<SolutionClassName>es.ucm.fdi.ici.c2122.practica5.grupo08.mspacman.MsPacManSolution</SolutionClassName>
+	<SolutionMappings>
+		<Map>id</Map>
+		<Map>action</Map>
+	</SolutionMappings>
+	<ResultClassName>es.ucm.fdi.ici.c2122.practica5.grupo08.mspacman.MsPacManResult</ResultClassName>
+	<ResultMappings>
+		<Map>id</Map>
+		<Map>score</Map>
+		<Map>hasDied</Map>
+		<Map>result</Map>
+	</ResultMappings>
+</TextFileConfiguration>

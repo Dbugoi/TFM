@@ -1,0 +1,63 @@
+<TextFileConfiguration>
+	<FilePath>not used</FilePath>
+	<Delimiters>,</Delimiters>
+	<DescriptionClassName>es.ucm.fdi.ici.c2122.practica5.grupo05.mspacman.MsPacManDescription</DescriptionClassName>
+	<DescriptionMappings>
+		<Map>time</Map>
+		<Map>id</Map>
+		<Map>score</Map>
+		<Map>level</Map>
+		<Map>numEdible</Map> 
+				
+		<Map>distPillUp</Map>		
+		<Map>distPillDown</Map>	
+		<Map>distPillLeft</Map>	
+		<Map>distPillRight</Map>
+		
+		<Map>distPowerPillUp</Map>	
+		<Map>distPowerPillDown</Map>	
+		<Map>distPowerPillLeft</Map>	
+		<Map>distPowerPillRight</Map>	
+		
+		<Map>distEdibleUp</Map>	
+		<Map>distEdibleDown</Map>	
+		<Map>distEdibleLeft</Map>	
+		<Map>distEdibleRight</Map>	
+		
+		<Map>distChasingUp</Map>	
+		<Map>distChasingDown</Map>	
+		<Map>distChasingLeft</Map>	
+		<Map>distChasingRight</Map>	
+		
+		<Map>timeEdibleUp</Map>	
+		<Map>timeEdibleDown</Map>	
+		<Map>timeEdibleLeft</Map>	
+		<Map>timeEdibleRight</Map>	
+		
+		<Map>distJunctionUp</Map>	
+		<Map>distJunctionDown</Map>	
+		<Map>distJunctionLeft</Map>	
+		<Map>distJunctionRight</Map>	
+		
+		<Map>lastMoveGhostUp</Map>	
+		<Map>lastMoveGhostDown</Map>	
+		<Map>lastMoveGhostLeft</Map>	
+		<Map>lastMoveGhostRight</Map>	
+		
+		<Map>distJunction_ChasingUp</Map>	
+		<Map>distJunction_ChasingDown</Map>	
+		<Map>distJunction_ChasingLeft</Map>	
+		<Map>distJunction_ChasingRight</Map>	
+		
+	</DescriptionMappings>
+	<SolutionClassName>es.ucm.fdi.ici.c2122.practica5.grupo05.mspacman.MsPacManSolution</SolutionClassName>
+	<SolutionMappings>
+		<Map>id</Map>
+		<Map>action</Map>
+	</SolutionMappings>
+	<ResultClassName>es.ucm.fdi.ici.c2122.practica5.grupo05.mspacman.MsPacManResult</ResultClassName>
+	<ResultMappings>
+		<Map>id</Map>
+		<Map>score</Map>
+	</ResultMappings>
+</TextFileConfiguration>

@@ -1,0 +1,26 @@
+<TextFileConfiguration>
+	<FilePath>not used</FilePath>
+	<Delimiters>,dS->:[] </Delimiters>
+	<DescriptionClassName>es.ucm.fdi.ici.c2122.practica5.grupo02.mspacman.MsPacManDescription</DescriptionClassName>
+	<DescriptionMappings>
+		<Map>id</Map>
+		<Map>score</Map>
+		<Map>time</Map>
+		<Map>distanceNearestPPill</Map>		
+		<Map>distanceNearestGhost</Map>		
+		<Map>nearestNodeGhost</Map>		
+		<Map>edibleGhost</Map>		
+		<Map>livesLeft</Map>		
+	</DescriptionMappings>
+	<SolutionClassName>es.ucm.fdi.ici.c2122.practica5.grupo02.mspacman.MsPacManSolution</SolutionClassName>
+	<SolutionMappings>
+		<Map>id</Map>
+		<Map>action</Map>
+	</SolutionMappings>
+	<ResultClassName>es.ucm.fdi.ici.c2122.practica5.grupo02.mspacman.MsPacManResult</ResultClassName>
+	<ResultMappings>
+		<Map>id</Map>
+		<Map>score</Map>
+		<Map>lives</Map>
+	</ResultMappings>
+</TextFileConfiguration>
