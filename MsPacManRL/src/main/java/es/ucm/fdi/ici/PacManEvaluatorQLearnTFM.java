@@ -1,8 +1,7 @@
 package es.ucm.fdi.ici;
 /**
- * PacManEvaluatorTFG
- * Class to evaluate the MsPacMan developed
- * during the TFG
+ * PacManEvaluatorQLearnTFM
+ * Class to evaluate the Q-learning MsPacMans
  */
 
 
