@@ -15,7 +15,7 @@ Implementacion de clases evaluadoras que obtienen información de las evaluacion
 
 
 
-* PacManEvaluatorTFMBash: clase que realiza las evaluaciones entre las diferentes implementaciones con Q-learning contra los ghosts que se encuentran en el archivo *config.properties*. Permite realizar las evaluaciones contra ghosts que usen las técnicas CBR, Algorítmica, FSM y Rules. Estas evaluaciones se realizan en varios procesos de ejecución que van siendo creados desde un script de bash. Está pensado para usarlo en servidor y de esta manera si falla un proceso no se pierda toda la información de las evaluaciones previas.
+* PacManEvaluatorQLearnTFMBash: clase que realiza las evaluaciones entre las diferentes implementaciones con Q-learning contra los ghosts que se encuentran en el archivo *config.properties*. Permite realizar las evaluaciones contra ghosts que usen las técnicas CBR, Algorítmica, FSM y Rules. Estas evaluaciones se realizan en varios procesos de ejecución que van siendo creados desde un script de bash. Está pensado para usarlo en servidor y de esta manera si falla un proceso no se pierda toda la información de las evaluaciones previas.
 
 
 ### Localización
@@ -69,7 +69,7 @@ for ((i = $CICLOS; i <= $TOTAL_EJECUCIONES; i+=$CICLOS)); do
 done
 ```
 
-#### Para PacManEvaluatorTFMBash:
+#### Para PacManEvaluatorQLearnTFMBash:
 ```#!/bin/bash
 
 # Ruta al archivo JAR que deseas ejecutar
@@ -87,4 +87,13 @@ for ((i = $CICLOS; i <= $TOTAL_EJECUCIONES; i+=$CICLOS)); do
 done
 ```
 
+### Archivos Obtenidos
+Tras la ejecución de los evaluadores se obtienen los siguientes archivos:
+* resultados.csv: archivo que contiene los resultados a lo largo de las evaluaciones en formato csv.
+* casebasesize.csv: archivo que contiene los tamaños de las bases de casos a lo largo de las evaluaciones en formato csv.
+* avgknn.csv: archivo que contiene las medias knn a lo largo de las evaluaciones en formato csv.
+* tiempos.csv: archivo que contiene los tiempos de ejecucion a lo largo de las evaluaciones en formato csv.
+
+Cabe destacar que para las evaluaciones con Q-learning solo sirven los archivos resultados.csv y tiempos.csv, debido a que no tiene base de casos y tampoco medias knn.
+Los otros dos archivos se crean pero no tienen información.
 
