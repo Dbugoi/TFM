@@ -97,3 +97,4 @@ Tras la ejecución de los evaluadores se obtienen los siguientes archivos:
 Cabe destacar que para las evaluaciones con Q-learning solo sirven los archivos resultados.csv y tiempos.csv, debido a que no tiene base de casos y tampoco medias knn.
 Los otros dos archivos se crean pero no tienen información.
 
+Estos archivos son los que permiten crear todas las gráficas y las tablas que se encuentran en la memoria del TFM.
